@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* this : 함수가 속해있는 객체를 가르키는 객체 */
+        let grade = {
+            'list' : {'a':10, 'b':20, 'c':30},
+            'show' : function(){
+                console.log(this.list);
+            }
+        };
+        grade.show();
+    </script>    
+</body>
+</html>
+
+
+
+
+
+
+

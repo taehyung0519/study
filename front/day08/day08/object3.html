@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let grade = {
+            'list' : { 'a' : 10, 'b' : 20, 'c' : 30 },
+            'show' : function(){
+                document.write('Hello World');
+            }
+        };
+        document.write(grade.list + "<br/>");
+        document.write(grade.list.b + "<br/>");
+        document.write(grade['list']['c'] + "<br/>");
+        grade.show();
+        document.write("<br/>");
+        grade['show']();
+        // document.write(grade.show() + "<br/>");
+    </script>    
+</body>
+</html>
+
+
+
+
+
+

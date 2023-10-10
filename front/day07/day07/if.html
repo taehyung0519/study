@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            - 아이디를 입력해주세요 : 아이디 입력받기
+             조건 : 아이디가 usertest가 맞으면, pw 입력
+                  그렇지 않으면 '인증에 실패했습니다'. alert 출력
+            - 패스워드를 입력해주세요 : 패스워드 입력받기
+             조건 : 패스워드가 1234이면 '인증성공' alert출력
+                  그렇지 않으면 '인증에 실패했습니다.' alert 출력             
+        */
+        var id = prompt('아이디를 입력해주세요');
+        //console.log(id);
+        if( id == 'usertest' ){
+            // password .. 
+            var password = prompt('비밀번호를 입력해주세요.');
+            if( password == '1234' ){
+                alert('인증 성공');
+            } else {
+                alert('인증에 실패했습니다.');
+            }
+        } else {
+            alert("인증에 실패했습니다.");
+        }
+    </script>
+</body>
+</html>

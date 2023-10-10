@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>10 + 50 = <span id="question">?</span> </h1>
+    <input type="button" value="결과보기" 
+        onclick="printResult()"/>
+    <script>
+        function printResult(){
+            let mytag = document.getElementById('question');
+            mytag.innerHTML = 60;
+        }
+    </script>
+    <!--
+        innserHTML 사용, ? -> 60
+    -->
+</body>
+</html>
+
+
+
+
+
+
+

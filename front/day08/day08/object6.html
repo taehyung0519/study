@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let people = {};
+
+        people.name = "자바학생";
+        people.gender = "여자";
+
+        // 객체 안에 함수를 포함시키기
+        people.sayName = function(){
+            document.write("<h1>" + this.name + "</h1>");
+        }
+
+        people.sayGender = function(){
+            document.write("<h1>" + this.gender + '</h1>');
+        }
+
+        people.saySomethig = function(msg){
+            document.write("<h1>" + msg + '</h1>');
+        }
+
+        people.getName = function(){
+            return this.name;
+        }
+
+        people.getGender = function(){
+            return this.gender;
+        }
+
+        people.sayInfo = function(){
+            document.write("<h1>" + this.getName() + "님은 "
+                + this.getGender()) + "입니다. </h1>";
+        }
+
+        people.sayName();
+        people.sayGender();
+        people.saySomethig("Javascript");
+        people.sayInfo();
+
+
+    </script>    
+</body>
+</html>
+
+
+
+
+
+
+

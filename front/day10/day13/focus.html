@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <form id="myform">
+        <h3>주민번호를 입력하세요</h3>
+        <input type="text" name="jumin1" id="jumin1"/>
+        -
+        <input type="password" name="jumin2" id="jumin2"/>
+    </form>
+    <script>
+        $("#jumin1, #jumin2").focus(function(){
+            $(this).css('background-color','powderblue');
+        });
+
+        $("#jumin1, #jumin2").blur(function(){
+            $(this).css('background-color','#fff');
+        });
+
+        // 키 이벤트 설정
+        $("#jumin1").keyup(function(){
+            let value = $(this).val();
+            if( value.length >= 6 ){
+                let input = value.substring(0,6);   // 6자리만 남겨놓고 자른다.
+                $(this).val(input);
+                $('#jumin2').focus();
+            }
+
+        });        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

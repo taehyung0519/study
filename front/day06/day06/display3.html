@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .link{
+            font: 14px "굴림";
+            padding: 0 15px;
+            text-decoration: none;
+            display: block;
+            width: auto;
+            height: 40px;
+            border-bottom: 1px dotted black;
+        }
+        /*
+            first-child : 여러개의 요소 중에서 첫 번째 요소
+            last-child : 여러개의 요소 중에서 마지막 요소
+        */
+        .link:first-child{
+            border-top: 1px dotted black;
+        }
+        .link:hover{ background-color: powderblue; }
+    </style>
+</head>
+<body>
+    <a href="#" class="link">메뉴항목1</a>
+    <a href="#" class="link">메뉴항목2</a>
+    <a href="#" class="link">메뉴항목3</a>
+    <a href="#" class="link">메뉴항목4</a>
+</body>
+</html>

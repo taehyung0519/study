@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 빈 배열 생성
+        let myarray = new Array();
+        // 반복문 사용해서 배열의 10칸에, 각각 0~9까지 할당
+        for( let i=0; i<10; i++ ){
+            myarray[i] = i;
+        }
+        // 배열 길이 출력
+        document.write("배열의 길이 : " + myarray.length);
+
+        // 반복문 사용해여 각각의 값을 출력
+        for( let i=0; i<myarray.length; i++ ){
+            document.write("<p>" + myarray[i] + "</p>");
+        }        
+    </script>
+</body>
+</html>

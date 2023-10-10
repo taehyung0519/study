@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="btn1" value="btn1"/>
+    <input type="button" id="btn2" value="btn2"/>
+    <script>
+        let t1 = document.getElementById('btn1');
+        let t2 = document.getElementById('btn2');
+
+        t1.addEventListener('click', btn_listener);
+        t2.addEventListener('click', btn_listener);
+
+        function btn_listener(event){
+            // id가 btn1일때는 alert(1) 
+            // id가 btn2일때는 alert(2) 
+            switch(event.target.id){
+                case 'btn1':
+                    alert(1);
+                    break;
+                case 'btn2':
+                    alert(2);
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

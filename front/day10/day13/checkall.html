@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <label>전체선택
+        <input type="checkbox" id="all_check"/>                
+    </label>
+    <hr/>
+    <label>
+        <input type="checkbox" class="hobby" value="soccor"/>축구
+    </label>
+    <label>
+        <input type="checkbox" class="hobby" value="basketball"/>농구
+    </label>
+    <label>
+        <input type="checkbox" class="hobby" value="baseball"/>야구
+    </label>
+    <script>
+        $("#all_check").change(function(){
+            $(".hobby").prop('checked', $(this).prop('checked'));
+        });
+    </script>
+
+    ~2시까지
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myarray = new Array("HTML", "CSS","JavaScript");
+
+        // 값 읽기
+        document.write("<h1>"+myarray[0]+"</h1>");
+        document.write("<h1>"+myarray[1]+"</h1>");
+        document.write("<h1>"+myarray[2]+"</h1>");
+
+        // 재할당
+        myarray[0] = "user1";
+        myarray[1] = "user2";
+        myarray[2] = "user3";
+
+        // document.write("<h1>"+myarray[0]+"</h1>");
+        // document.write("<h1>"+myarray[1]+"</h1>");
+        // document.write("<h1>"+myarray[2]+"</h1>");
+
+        // for, 배열이름.length
+        for( let i=0; i<myarray.length; i++ ){
+            document.write("<h2>"+myarray[i]+"</h2>");
+        }
+
+    </script>    
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: powderblue;
+            border: 10px dotted blue;
+            width: 90%;
+            height: auto;
+        }
+        .child{
+            background-color: orange;
+            /* 부모의 width에서 자신의 padding값과 
+               border 값을 제외한 나머지를 자동으로 계산 */
+            width: auto;
+            padding: 10px 20px;
+            border : 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">HTML &amp; CSS</div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

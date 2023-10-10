@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 자기자신을 참조하는 방법 -->
+    <input type="button" id="target" value="button"
+onclick="alert('hello,' + document.getElementById('target').value);"/>
+
+    <!-- this를 통해 간편하게 참조 -->
+    <input type="button" value="button2"
+        onclick="alert('hello,' + this.value);"/>
+</body>
+</html>
+
+
+
+
+
+
+

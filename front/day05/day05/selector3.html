@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            border 속성 : 셀렉터가 의미하는 요소의 테두리 속성을 설정 
+            테두리 : 굵기 종류 색상
+            종류 : solid(직선), dashed(점선), dot(점), none(투명)
+        */
+        input{ border: 1px solid orange; }
+
+        /* type속성의 값이 radio인 input요소와 checkbox인 input요소  */
+        input[type='radio'], input[type='checkbox']{ 
+            color: blue; 
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>회원가입</h1>
+        <fieldset>
+            <legend>기본정보</legend>
+            <div>
+                <label>아이디 : 
+                    <input type="text" name="user_id" id="user_id"/>
+                </label>
+            </div>
+            <div> 패스워드 : 
+                <input type="password" name="user_pw" id="user_pw"/>
+            </div>
+        </fieldset>
+        <br/>
+
+        <fieldset>
+            <legend>성별</legend>
+            <div>
+                <label> 남자
+                    <input type="radio" name="gender" value="M"/>
+                </label>
+                <label> 여자
+                    <input type="radio" name="gender" value="F"/>
+                </label>
+            </div>
+        </fieldset>
+        <br/>
+
+        <fieldset>
+            <legend>취미</legend>
+            <div>
+                <label>축구 
+                    <input type="checkbox" name="hobby" value="축구"/>
+                </label>
+                <label>농구 
+                    <input type="checkbox" name="hobby" value="농구"/>
+                </label>
+                <label>야구 
+                    <input type="checkbox" name="hobby" value="야구"/>
+                </label>
+            </div>    
+        </fieldset>
+    </form>
+</body>
+</html>

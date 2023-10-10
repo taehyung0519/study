@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.box{
+            background-color: tomato;
+            height: 100px;
+            width: 80%;
+            padding: 10px;
+        }
+        .corner1{ border-radius: 20px; }
+        .corner2{ 
+            border-bottom-left-radius: 20px; 
+            border-top-right-radius: 20px;
+        }
+        .corner3{ border-radius: 20px 0 20px 0; }
+    </style>
+</head>
+<body>
+    <section>
+        <p class="box corner1">박스1</p>
+        <p class="box corner2">박스2</p>
+        <p class="box corner3">박스3</p>
+    </section>
+</body>
+</html>

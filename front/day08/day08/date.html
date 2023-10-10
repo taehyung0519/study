@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mydate = new Date();
+        
+        // 년,월,일 리턴받기
+        let yy = mydate.getFullYear()
+        // 월은 0이 1월, 11이 11월을 의미
+        let mm = mydate.getMonth() + 1;
+        let dd = mydate.getDate();
+
+        let result = yy + "-" + mm + "-" + dd;
+        document.write("<h1>" + result + "</h1>");
+
+        // 요일 : 일요일은 0이고, 토요일은 6이다
+        let days = ['일','월','화','수','목','금','토'];
+        let i = mydate.getDay();    // 요일의 number 리턴
+        let day = days[i];
+        document.write('<h1>' + day + "</h1>");
+
+        // 현재 시각을 출력
+        let hh = mydate.getHours();
+        let mi = mydate.getMinutes();
+        let ss = mydate.getSeconds();
+
+        let result2 = hh + ":" + mi + ":" + ss;
+        document.write("<h1>" + result2 + "</h1>");
+        
+    </script>    
+</body>
+</html>
+
+
+
+
+
+
+
