@@ -1,9 +1,7 @@
 package com.codingbox.springprj.domain;
 
-
 import java.util.ArrayList;
 import java.util.List;
-
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
@@ -18,15 +16,30 @@ import lombok.Setter;
 @Getter @Setter
 public class Member {
 	
-	@Id
-	@GeneratedValue		// 전략 생략하면 AUTO로 지정된다.
+	@Id @GeneratedValue
 	@Column(name = "member_id")
-	private Long id;
+	private Long Id;
 	private String name;
+	
 	@Embedded
 	private Address address;
 	
 	@OneToMany(mappedBy = "member")
-	private List<Order> orders = new ArrayList<>();
-
+	private List<Order> orders
+		= new ArrayList<>();
+		
+	
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
+
